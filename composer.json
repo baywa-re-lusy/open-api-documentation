@@ -1,0 +1,13 @@
+{
+    "name": "baywa-re-lusy/open-api-documentation",
+    "description": "OpenAPI extension to reuse attributes with the DRY principle",
+    "type": "plugin",
+    "require": {
+        "zircote/swagger-php": "^4.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "BaywaReLusy\\OpenApiDocumentation\\": "src/"
+        }
+    }
+}
