@@ -12,8 +12,8 @@ final class OAResponse401 extends Response
     {
         parent::__construct(
             response: 401,
-            description: "The user isn't authorized to access this resource (invalid or expired token)",
-            content: new OA\MediaType(mediaType: "application/problem+json")
+            description: 'Unauthorized',
+            content: new OA\MediaType(mediaType: 'application/problem+json')
         );
     }
 }

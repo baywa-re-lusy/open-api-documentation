@@ -12,8 +12,8 @@ final class OAResponse415 extends Response
     {
         parent::__construct(
             response: 415,
-            description: "Media Type unsupported.",
-            content: new OA\MediaType(mediaType: "application/problem+json")
+            description: 'Unsupported Media Type',
+            content: new OA\MediaType(mediaType: 'application/problem+json')
         );
     }
 }
