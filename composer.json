@@ -11,5 +11,8 @@
         "psr-4": {
             "BaywaReLusy\\OpenApiDocumentation\\": "src/OpenApiDocumentation"
         }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10"
     }
 }
