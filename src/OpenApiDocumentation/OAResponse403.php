@@ -12,8 +12,8 @@ final class OAResponse403 extends Response
     {
         parent::__construct(
             response: 403,
-            description: "The user doesn't have the permission to access this resource.",
-            content: new OA\MediaType(mediaType: "application/problem+json")
+            description: 'Forbidden',
+            content: new OA\MediaType(mediaType: 'application/problem+json')
         );
     }
 }

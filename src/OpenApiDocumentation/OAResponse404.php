@@ -12,8 +12,8 @@ final class OAResponse404 extends Response
     {
         parent::__construct(
             response: 404,
-            description: "Resource not found",
-            content: new OA\MediaType(mediaType: "application/problem+json")
+            description: 'Not found',
+            content: new OA\MediaType(mediaType: 'application/problem+json')
         );
     }
 }

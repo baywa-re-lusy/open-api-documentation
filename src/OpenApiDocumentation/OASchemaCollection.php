@@ -11,23 +11,23 @@ final class OASchemaCollection extends OA\Schema
         string $property,
         string $ref
     ) {
-        $ref = "#/components/schemas/" . $ref;
+        $ref = sprintf('#/components/schemas/%s', $ref);
 
         parent::__construct(
             allOf: [
-                new OA\Schema(ref: "#/components/schemas/HalCollectionLinks"),
+                new OA\Schema(ref: '#/components/schemas/HalCollectionLinks'),
                 new OA\Schema(
                     properties: [
                         new OA\Property(
-                            property: "_embedded",
+                            property: '_embedded',
                             properties: [
                                 new OA\Property(
                                     property: $property,
-                                    type: "array",
+                                    type: 'array',
                                     items: new OA\Items($ref)
                                 )
                             ],
-                            type: "object"
+                            type: 'object'
                         )
                     ]
                 )

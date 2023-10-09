@@ -12,8 +12,8 @@ final class OAResponse406 extends Response
     {
         parent::__construct(
             response: 406,
-            description: "Content not acceptable.",
-            content: new OA\MediaType(mediaType: "application/problem+json")
+            description: 'Not Acceptable',
+            content: new OA\MediaType(mediaType: 'application/problem+json')
         );
     }
 }
