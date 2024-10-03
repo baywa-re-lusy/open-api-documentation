@@ -7,7 +7,7 @@ composer_install: &composer_install
 jobs:
   build:
     docker:
-      - image: ${ACR_HOSTNAME_PD}/alpine-php82-build:2.1.0
+      - image: ${ACR_HOSTNAME_COMMON}/alpine-php82-build:2.2.1
         auth:
           username: ${ACR_LOGIN_PD}
           password: ${ACR_PASSWORD_PD}
